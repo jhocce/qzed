@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "98f52c7f-c08b-4a29-a17d-0132f1cd01bc",
+		"name": "saludos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5697057"
+	},
+	"item": [
+		{
+			"name": "guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"mensaje\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/saludo/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"saludo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"pk_publica\": \"0e969946-3a7b-4bfd-af1f-4be1f6f3756a\",\r\n            \"mensaje\": \"string\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/saludo/0e969946-3a7b-4bfd-af1f-4be1f6f3756a/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"saludo",
+						"0e969946-3a7b-4bfd-af1f-4be1f6f3756a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
